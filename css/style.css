@@ -1,0 +1,202 @@
+/* 
+font-family: "Nerko One", cursive; 
+
+*/
+:root {
+    --primary-color: rgb(58, 73, 123);
+    --secondary-color: rgb(0, 153, 204);
+    --main-color: #272b30;
+    --badge-color: #32383e;
+    --text-primary-color: white;
+    --text-secondary-color: rgb(0, 153, 204);
+}
+
+.t {
+    font-family: "Nerko One", cursive;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--text-primary-color);
+}
+
+.link {
+    font-family: "Nerko One", cursive;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: var(--text-primary-color);
+
+}
+
+.title,
+.sub-title
+
+/* ,.badge */
+    {
+    font-family: "Nerko One", cursive;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    color: var(--text-primary-color);
+}
+
+.sub-title {
+    font-weight: 400;
+    line-height: 21px;
+    font-size: 16px;
+}
+
+.details-title {
+    font-family: "Nerko One", cursive;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 34px;
+    color: var(--text-primary-color);
+}
+
+/* .badge {
+    font-weight: 700;
+    line-height: 11px;
+    font-size: 11px;
+} */
+
+body {
+    background-color: var(--main-color);
+
+}
+
+.games {
+    header img {
+        max-height: 30vh;
+        object-fit: cover;
+    }
+
+    nav {
+        .container {
+            background-color: var(--primary-color) !important;
+            margin-inline: auto;
+            margin-top: -30px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgb(0 0 0 / 0.7);
+        }
+
+        /* height: 120px; */
+
+        .navbar-collapse {
+            flex-grow: 0 !important;
+        }
+
+        a {
+            p {
+                font-family: "Nerko One", cursive;
+                font-size: 22px;
+                font-weight: 500;
+                line-height: 24px;
+                color: var(--text-primary-color);
+            }
+
+            img {
+                max-height: 30px;
+            }
+
+            small {}
+        }
+
+        .navbar-nav li {}
+
+        .navbar-nav li .nav-link {
+            /* border: 2px solid var(--babyplue-color) !important; */
+            border-radius: 30px;
+            padding: 2px 15px;
+            transition: all 0.5s;
+
+        }
+
+
+        .navbar-nav .nav-link.active,
+        .navbar-nav .nav-link:hover {
+            color: var(--text-secondary-color) !important;
+        }
+
+        .active {
+            color: var(--text-secondary-color) !important;
+        }
+    }
+
+    /* 
+
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+} */
+    .game-card {
+        transition: all 0.5s;
+        box-sizing: border-box;
+        cursor: pointer;
+
+    }
+
+    .game-card img {
+        filter: grayscale(0.6);
+        transition: all 0.5s;
+    }
+
+    .game-card:hover {
+        scale: 1.05;
+
+    }
+
+    .game-card:hover img,
+    .game-card:hover .badge {
+        filter: grayscale(0);
+
+
+    }
+
+    .badge {
+        background-color: var(--badge-color);
+        filter: grayscale(0.6);
+
+    }
+
+    /* .game-card:hover .free-badge {
+    background-color: var(--secondary-color);
+
+} */
+
+    .free-badge {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 12px;
+        transition: all 0.5s;
+        background-color: #09c;
+        filter: grayscale(0.6);
+
+
+    }
+
+    .free-badge:hover {
+        background-color: var(--secondary-color);
+    }
+
+    .description {
+        height: 250px;
+    }
+
+}
+
+.details {
+
+    .text18 {
+        font-size: 18px;
+    }
+
+    .badge {
+        font-size: 13px;
+    }
+
+    a:hover {
+        color: var(--text-primary-color);
+    }
+}
